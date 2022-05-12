@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+$color-light-blue: #59a5ba;
+$color-light-blue-opacity: rgba(89, 165, 186, 0.1);
+$color-dark-blue: #132a35;
+$color-white: #fff;
+$color-black: #000;
+$color-red: #A80000;
+$color-light-grey: #e8e8e8;
+$color-dark-grey: #42545C;
+$color-dark-grey-opacity: rgba(66, 84, 92, 0.4);
+$color-list: #eee;
+
+$font-family: (
+  "arial-font": Arial,
+  "open-sans-font": 'Open Sans',
+  "lobster-font": 'Lobster',
+);
+
+$font-weigth: (
+  "thin": 100,
+  "extra-light": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "ultra-bold": 900,
+);
+
+@mixin link {
+  text-decoration: none;
+  color: $color-dark-blue;
+  background-color: $color-light-blue;
+  &:visited {
+    color: $color-dark-blue;
+  }
+  &:hover {
+    color: $color-light-blue;
+    background-color: $color-dark-blue;
+  }
+  &:active {
+    color: $color-light-blue;
+  }
+};
+
+@function font ($font-name) {
+  @return map-get($map: $font-family, $key: $font-name)
+};
+
+@function weight($weight-name) {
+  @return map-get($map: $font-weigth, $key: $weight-name)
+};
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-light-grey;
+}
+
+h2 {
+  font-family: font(open-sans-font);
+  @include center();
+  margin: 20px 0;
+}
