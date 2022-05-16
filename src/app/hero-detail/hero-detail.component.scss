@@ -18,18 +18,7 @@
       @include center();
       flex-direction: row;
     }
-    input {
-      font-size: 1em;
-      margin: 0 0.5rem;
-      padding: 0 0.5rem;
-      background-color: transparent;
-      color: $color-dark-grey;
-      border: none;
-      border-bottom: solid 1px $color-dark-grey-opacity;
-      input:focus {
-        outline: none;
-      }
-    }
+    
   }
   button {
     margin-top: 20px;

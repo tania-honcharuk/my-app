@@ -4,7 +4,9 @@ h2 {
   color: $color-red;
   font-family: font(open-sans-font);
   font-weight: weight(thin);
+  justify-content: start;
 }
+
 .clear {
   color: #333;
   background-color: #eee;
@@ -17,4 +19,9 @@ h2 {
     color: $color-white;
     background-color: $color-dark-grey;
   }
+}
+
+.message {
+  font-family: font(arial-font);
+  font-size: 12px;
 }

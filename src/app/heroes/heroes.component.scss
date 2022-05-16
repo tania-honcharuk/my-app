@@ -38,5 +38,12 @@
         margin-left: 0.5em;
       }
     }
+    button.delete {
+      background: transparent;
+      margin-left: 10px;
+      &:hover {
+        color: $color-white;
+      }
+    }
   } 
 }

@@ -75,3 +75,32 @@ h2 {
   @include center();
   margin: 20px 0;
 }
+
+label {
+  font-family: font(open-sans-font);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: weight(bold);
+}
+
+input {
+  font-size: 1em;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  color: $color-dark-grey;
+  border: none;
+  border-bottom: solid 1px $color-dark-grey-opacity;
+  &:focus {
+    outline: none;
+    background: transparent;
+  }
+}
+
+button {
+  background-color: transparent;
+  color: $color-dark-grey;
+  border: none;
+  font-size: 24px;
+  line-height: 36px;
+}
