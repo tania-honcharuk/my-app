@@ -1,0 +1,21 @@
+<form>
+  <div>
+    <label for="name">ID</label>
+    <input type="text" required id="name" [value]="model.id">
+  </div>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" required id="name" [value]="model.name">
+  </div>
+  <div>
+    <label for="alterEgo">Alter Ego</label>
+    <input type="text" id="alterEgo" [value]="model.alterEgo">
+  </div>
+  <div>
+    <label for="power">Hero Power</label>
+    <select class="form-control" id="power" required>
+      <option *ngFor="let pow of powers" [value]="model.power">{{pow}}</option>
+    </select>
+  </div>
+</form>
+
